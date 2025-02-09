@@ -4,31 +4,6 @@ body {
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
-<<<<<<< HEAD
-    background: linear-gradient(to bottom, #d9e5f1, #2c3e50);
-    font-family: 'Arial', sans-serif;
-    overflow: hidden;
-}
-
-header {
-    margin-top: 2em;
-    margin-bottom: 2em;
-    text-align: center;
-    animation: fadeIn 1s ease-out;
-    color: #fff;
-}
-
-header h1 {
-    font-size: 3em;
-    display: inline-block;
-    padding: 10px 20px;
-    border: 3px solid transparent;
-    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    animation: borderAnimation 4s linear infinite ;
-=======
     background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
     font-family: 'Arial', sans-serif;
     overflow-x: hidden;
@@ -47,78 +22,10 @@ header h1 {
     background-clip: text;
     color: transparent;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
->>>>>>> master
 }
 
 .container {
     text-align: center;
-<<<<<<< HEAD
-    animation: fadeIn 1.5s ease-out;
-    margin-bottom: 20px; /* spacing between image and button */
-}
-
-.image-wrapper {
-    width: 600px;
-    max-width: 95vw;
-    height: auto;
-    overflow: hidden;
-    position: relative;
-    background-color: #fff;
-    padding: 10px;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.4);
-}
-
-.animated-image {
-    display: block;
-    width: 100%;
-    height: auto;
-    position: relative;
-    top: 0;
-    left: 0;
-    transition: opacity 0.3s ease;
-    opacity: 1;
-}
-
-/* Hover effect */
-.image-wrapper:hover .animated-image{
-    opacity: 0.9;
-}
-
-/* Click effect */
-.animated-image.clicked {
-    opacity: 0.5;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; transform: scale(0.9); }
-    to { opacity: 1; transform: scale(1); }
-}
-
-/* rainbow border */
-@keyframes borderAnimation {
-    0% {
-        background-position: 0% 50%;
-    }
-    100% {
-        background-position: 100% 50%;
-    }
-}
-
-/* Download button styles */
-#downloadButton {
-    padding: 10px 20px;
-    font-size: 1em;
-    background-color: #3498db;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-#downloadButton:hover {
-    background-color: #2980b9;
-=======
     animation: slideUp 1s ease-out;
     margin: 20px;
 }
@@ -174,5 +81,4 @@ header h1 {
 @keyframes slideUp {
     from { opacity: 0; transform: translateY(50px); }
     to { opacity: 1; transform: translateY(0); }
->>>>>>> master
 }
