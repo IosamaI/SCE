@@ -4,6 +4,7 @@ body {
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
+<<<<<<< HEAD
     background: linear-gradient(to bottom, #d9e5f1, #2c3e50);
     font-family: 'Arial', sans-serif;
     overflow: hidden;
@@ -27,10 +28,31 @@ header h1 {
     -webkit-background-clip: text;
     color: transparent;
     animation: borderAnimation 4s linear infinite ;
+=======
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    margin: 2em 0;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+header h1 {
+    font-size: 2.5em;
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+>>>>>>> master
 }
 
 .container {
     text-align: center;
+<<<<<<< HEAD
     animation: fadeIn 1.5s ease-out;
     margin-bottom: 20px; /* spacing between image and button */
 }
@@ -96,4 +118,61 @@ header h1 {
 
 #downloadButton:hover {
     background-color: #2980b9;
+=======
+    animation: slideUp 1s ease-out;
+    margin: 20px;
+}
+
+.image-wrapper {
+    width: min(600px, 90vw);
+    height: auto;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.image-wrapper:hover {
+    transform: translateY(-5px);
+}
+
+.animated-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.animated-image.clicked {
+    transform: scale(0.95);
+    filter: brightness(0.8);
+}
+
+#downloadButton {
+    margin-top: 25px;
+    padding: 12px 30px;
+    font-size: 1.1em;
+    background: linear-gradient(45deg, #4ecdc4, #45b7af);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#downloadButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+>>>>>>> master
 }
